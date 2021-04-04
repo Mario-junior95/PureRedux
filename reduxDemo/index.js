@@ -66,7 +66,7 @@ const routeReducers = combineReducers({
   iceCream: iceCreamReducer,
 });
 
-const store = createStore(routeReducers , applyMiddleware(logger));
+const store = createStore(routeReducers, applyMiddleware(logger));
 console.log("Initial State : ", store.getState());
 
 const unsbscribe = store.subscribe(() => {
