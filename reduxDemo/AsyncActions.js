@@ -69,7 +69,7 @@ const fetchUser = () => {
   return function (dispatch) {
     dispatch(fetchUsersRequest());
     axios
-      .get("https://jsonplaceholsder.typicode.com/users")
+      .get("https://jsonplaceholder.typicode.com/users")
       .then((response) => {
         const users = response.data.map((user) => {
           return user.id;
